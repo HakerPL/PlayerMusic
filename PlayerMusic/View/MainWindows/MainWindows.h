@@ -1,4 +1,5 @@
-#pragma once
+#ifndef PLAYERMUSIC_H
+#define PLAYERMUSIC_H
 
 #include <QtWidgets/QMainWindow>
 #include <QMediaPlayer>
@@ -11,12 +12,13 @@ class MainWindows : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindows(QWidget *parent = Q_NULLPTR);
+    MainWindows(QWidget *parent = 0);
     ~MainWindows();
 
 private:
-    Ui::MainWindowsClass *ui;
-    QStandardItemModel  *m_playListModel;   // Data Model for Playlist
+    Ui::MainWindowsClass* ui;
+
+    QStandardItemModel* m_playListModel;   // Data Model for Playlist
     QMediaPlayer* m_player;
     QMediaPlaylist* m_playlist;
 
@@ -33,5 +35,6 @@ private slots:
 
     void on_positionChanged(qint64 position);
     void on_durationChanged(qint64 position);
-
 };
+
+#endif // PLAYERMUSIC_H
