@@ -1,7 +1,7 @@
 #ifndef PLAYERMUSIC_H
 #define PLAYERMUSIC_H
 
-#include <QtWidgets/QMainWindow>
+//#include <QtWidgets/QMainWindow>
 #include <QMediaPlayer>
 #include <QMediaPlaylist>
 #include <QStandardItemModel>
@@ -23,14 +23,20 @@ private:
     QMediaPlaylist* m_playlist;
 
 private slots:
+    /**
+     * \brief 
+     */
     void Exit();
     void Hide();
-    void playSelected(QModelIndex index);
+    void PlaySelected(QModelIndex index);
+    void PlayPause();
+    void Stop();
+    void Play();
+    void Pause();
+    void StatusChanged(QMediaPlayer::MediaStatus status);
 
     void on_sliderProgres();
     void on_sliderVolume(int position);
-    void on_btnPlayPause_clicked();
-    void on_btnStop_clicked();
     void on_btnAdd_clicked();
 
     void on_positionChanged(qint64 position);

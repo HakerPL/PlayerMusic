@@ -1,12 +1,10 @@
-﻿  Moc'ing MainWindows.h...
-  Uic'ing View\MainWindows\MainWindows.ui...
-  Rcc'ing View\MainWindows\MainWindows.qrc...
-RCC : warning : No resources in 'E:\Moje Programy\C++\PlayerMusic\PlayerMusic\View\MainWindows\MainWindows.qrc'.
-  
+﻿  Uic'ing View\MainWindows\MainWindows.ui...
   moc_MainWindows.cpp
-  main.cpp
   MainWindows.cpp
-  Generating Code...
-  qrc_MainWindows.cpp
-  PlayerMusic.vcxproj -> E:\Moje Programy\C++\PlayerMusic\x64\Debug\PlayerMusic.exe
-  PlayerMusic.vcxproj -> E:\Moje Programy\C++\PlayerMusic\x64\Debug\PlayerMusic.pdb (Full PDB)
+View\MainWindows\MainWindows.cpp(184): warning C4129: "M": nierozpoznany znak sekwencji ucieczki
+View\MainWindows\MainWindows.cpp(184): warning C4129: "C": nierozpoznany znak sekwencji ucieczki
+View\MainWindows\MainWindows.cpp(184): warning C4129: "P": nierozpoznany znak sekwencji ucieczki
+  main.cpp
+  Generowanie kodu...
+  PlayerMusic.vcxproj -> E:\Moje Programy\PlayerMusic\x64\Debug\PlayerMusic.exe
+  PlayerMusic.vcxproj -> E:\Moje Programy\PlayerMusic\x64\Debug\PlayerMusic.pdb (Full PDB)
