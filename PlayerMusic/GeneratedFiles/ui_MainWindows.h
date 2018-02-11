@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'MainWindows.ui'
 **
-** Created by: Qt User Interface Compiler version 5.9.1
+** Created by: Qt User Interface Compiler version 5.10.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -144,16 +144,16 @@ public:
 
     void retranslateUi(QMainWindow *MainWindowsClass)
     {
-        MainWindowsClass->setWindowTitle(QApplication::translate("MainWindowsClass", "MainWindows", Q_NULLPTR));
+        MainWindowsClass->setWindowTitle(QApplication::translate("MainWindowsClass", "MainWindows", nullptr));
         groupBoxUI->setTitle(QString());
-        btnPlayPause->setText(QApplication::translate("MainWindowsClass", "Play", Q_NULLPTR));
-        btnStop->setText(QApplication::translate("MainWindowsClass", "[ ]", Q_NULLPTR));
-        lblMusicTitle->setText(QApplication::translate("MainWindowsClass", "TextLabel", Q_NULLPTR));
-        btnAdd->setText(QApplication::translate("MainWindowsClass", "+", Q_NULLPTR));
+        btnPlayPause->setText(QApplication::translate("MainWindowsClass", "Play", nullptr));
+        btnStop->setText(QApplication::translate("MainWindowsClass", "[ ]", nullptr));
+        lblMusicTitle->setText(QApplication::translate("MainWindowsClass", "TextLabel", nullptr));
+        btnAdd->setText(QApplication::translate("MainWindowsClass", "+", nullptr));
         bar->setTitle(QString());
-        lblTitle->setText(QApplication::translate("MainWindowsClass", "Player Music", Q_NULLPTR));
-        btnExit->setText(QApplication::translate("MainWindowsClass", "X", Q_NULLPTR));
-        btnHide->setText(QApplication::translate("MainWindowsClass", "-", Q_NULLPTR));
+        lblTitle->setText(QApplication::translate("MainWindowsClass", "Player Music", nullptr));
+        btnExit->setText(QApplication::translate("MainWindowsClass", "X", nullptr));
+        btnHide->setText(QApplication::translate("MainWindowsClass", "-", nullptr));
     } // retranslateUi
 
 };

@@ -7,7 +7,7 @@
 #include <qtoolbutton.h>
 #include <QHeaderView>
 #include <QApplication>
-#include <QMediaMetaData>
+//#include <QMediaMetaData>
 
 using namespace std;
 
@@ -20,6 +20,7 @@ MainWindows::MainWindows(QWidget *parent)
     ui->playlistView->setModel(m_playListModel);
     m_playListModel->setHorizontalHeaderLabels(QStringList() //<< tr("Audio Track")
         << tr("File Path"));
+
     //ui->playlistView->hideColumn(1);
     ui->playlistView->verticalHeader()->setVisible(false);
     ui->playlistView->setSelectionBehavior(QAbstractItemView::SelectRows);
@@ -40,7 +41,7 @@ MainWindows::MainWindows(QWidget *parent)
     connect(ui->sliderProgres, SIGNAL(sliderReleased()), this, SLOT(on_sliderProgres()));
     connect(ui->sliderVolume, SIGNAL(valueChanged(int)), this, SLOT(on_sliderVolume(int)));
 
-    //connect(ui->playlistView, SIGNAL(doubleClicked(QModelIndex)), this, SLOT(PlaySelected(QModelIndex)));
+    connect(ui->playlistView, SIGNAL(doubleClicked(QModelIndex)), this, SLOT(PlaySelected(QModelIndex)));
 
     //m_player->setMedia(QUrl::fromLocalFile("F:/Mp3/skillet - m.mp3"));
     //qDebug() << m_player->errorString();
@@ -50,8 +51,7 @@ MainWindows::MainWindows(QWidget *parent)
 
     connect(ui->btnHide, SIGNAL(clicked()), this, SLOT(Hide()));
     connect(ui->btnExit, SIGNAL(clicked()), this, SLOT(Exit()));
-
-    //connect(ui->btnPlayPause, &QToolButton::clicked, m_player, &QMediaPlayer::play);
+    connect(ui->btnPlayPause, &QToolButton::clicked, m_player, &QMediaPlayer::play);
 
     connect(ui->btnPlayPause, SIGNAL(released()), this, SLOT(PlayPause()));
     connect(ui->btnStop, SIGNAL(released()), this, SLOT(Stop()));
@@ -181,8 +181,8 @@ void MainWindows::on_btnAdd_clicked()
   //  }
 
 
-	m_player->setMedia(QUrl::fromLocalFile("D:\Moje Programy\C++\PlayerMusic\01. Adrenaline Mob - Mob Is Back.mp3"));
-	QString test = m_player->errorString();
+	//m_player->setMedia(QUrl::fromLocalFile("D:\Moje Programy\C++\PlayerMusic\01. Adrenaline Mob - Mob Is Back.mp3"));
+	//QString test = m_player->errorString();
 	/*const QStringList files = QFileDialog::getOpenFileNames(this, "Open File", "", "MP3 files (*.mp3)");
 	QList<QMediaContent> content;
 	foreach(QString const &argument, files)

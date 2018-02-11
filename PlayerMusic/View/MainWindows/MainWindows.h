@@ -1,7 +1,7 @@
 #ifndef PLAYERMUSIC_H
 #define PLAYERMUSIC_H
 
-//#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMainWindow>
 #include <QMediaPlayer>
 #include <QMediaPlaylist>
 #include <QStandardItemModel>
