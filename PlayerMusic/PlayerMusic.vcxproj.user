@@ -4,11 +4,11 @@
     <ShowAllFiles>true</ShowAllFiles>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <QTDIR>E:\Biblioteki\Qt\Qt5.10.0\5.10.0\msvc2017_64</QTDIR>
+    <QTDIR>C:\Adrian\Programowanie\Biblioteki\Qt\Qt5.10.0\5.10.0\msvc2017_64</QTDIR>
     <LocalDebuggerEnvironment>PATH=$(QTDIR)\bin%3b$(PATH)</LocalDebuggerEnvironment>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <QTDIR>E:\Biblioteki\Qt\Qt5.10.0\5.10.0\msvc2017_64</QTDIR>
+    <QTDIR>C:\Adrian\Programowanie\Biblioteki\Qt\Qt5.10.0\5.10.0\msvc2017_64</QTDIR>
     <LocalDebuggerEnvironment>PATH=$(QTDIR)\bin%3b$(PATH)</LocalDebuggerEnvironment>
   </PropertyGroup>
 </Project>
